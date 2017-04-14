@@ -87,13 +87,11 @@ int main(void)
   MX_GPIO_Init();
   MX_DMA_Init();
   MX_SPI2_Init();
-  MX_USART2_UART_Init();
+  MX_USART2_UART_Init(); //А вот и русский
   
   ssd1306_init();
   
   /* USER CODE BEGIN 2 */
-  ssd1306_display_string(0, 0, "Hello, Whale! :)", 16, 1);
-  ssd1306_refresh_gram();
   /* USER CODE END 2 */
 
   /* Infinite loop */
