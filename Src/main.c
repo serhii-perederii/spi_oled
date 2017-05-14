@@ -92,6 +92,9 @@ int main(void)
   ssd1306_init();
   
   /* USER CODE BEGIN 2 */
+  ssd1306_display_string(0, 0, "Hello, Whale! :)", 16, 1);
+  ssd1306_draw_bitmap(0, 16, &i_whale[0], 128, 48);
+  ssd1306_refresh_gram();
   /* USER CODE END 2 */
 
   /* Infinite loop */

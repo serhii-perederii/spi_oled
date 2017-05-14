@@ -23,9 +23,9 @@ param([String]$debugfile = "");
 
 if ($debugfile -eq "")
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "D:\workspace\spi_oled\EWARM\settings\spi_oled.spi_oled.general.xcl" --backend -f "D:\workspace\spi_oled\EWARM\settings\spi_oled.spi_oled.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "D:\ARM\spi_oled\EWARM\settings\spi_oled.spi_oled.general.xcl" --backend -f "D:\ARM\spi_oled\EWARM\settings\spi_oled.spi_oled.driver.xcl" 
 }
 else
 {
-& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "D:\workspace\spi_oled\EWARM\settings\spi_oled.spi_oled.general.xcl" --debug_file=$debugfile --backend -f "D:\workspace\spi_oled\EWARM\settings\spi_oled.spi_oled.driver.xcl" 
+& "C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\common\bin\cspybat" -f "D:\ARM\spi_oled\EWARM\settings\spi_oled.spi_oled.general.xcl" --debug_file=$debugfile --backend -f "D:\ARM\spi_oled\EWARM\settings\spi_oled.spi_oled.driver.xcl" 
 }
